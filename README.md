@@ -1,35 +1,45 @@
-# Solidity Error Handling Assessment
-This repository is for the project assessment of the project of the 1st module of : solidity-avax-intermediate course of Metacrafters academy . The purpose of creating this to prove my learning and to showcase my skill as a solidity developer to the people
+# ErrorsAndFunctions
 
-## Problem Statement
-
-write a smart contract that implements the require(), assert() and revert() statements.
+This smart contract demonstrates the use of `require()`, `assert()`, and `revert()` statements in Solidity by validating if a given number is even. It counts the number of even numbers provided to the contract functions.
 
 ## Description
-This program is a simple contract written in Solidity, a programming language used for developing smart contracts on the Ethereum blockchain. The contract has a single function that sets the value of the varble by checking some constrains as given in program an to divide the two values taken from the user by checking that the number is divisible and the value od denominator is not equal to 0. This program uses the concept of Functions and Error handling.
 
-The setValue function sets a new value but requires that the input _newValue must be greater than zero. It uses require() for input validation and assert() to ensure that the new value is different from the existing value.
-
-The performDivison function performs a division but requires that the _denominator must be non-zero. If the _numerator is not divisible by the _denominator, the function will revert with a specific error message using the revert() statement.
-
-It's essential to use these error handling statements judiciously to maintain the security and correctness of your smart contract. Remember that require() and revert() consume all gas when they fail, while assert() should only be used to check for internal errors and should not fail under normal conditions.
+The `ErrorsAndFunctions` contract is designed to showcase how to use error handling statements in Solidity. It includes three functions that check if a given number is even using `require()`, `assert()`, and `revert()`. If the number is even, it increments an `evenCount` state variable.
 
 ## Getting Started
 
-### Executing Program
+### Installing
 
-To run this program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at https://remix.ethereum.org/.
+1. Clone the repository or copy the contract code.
+2. Navigate to [Remix](https://remix.ethereum.org/) or any Solidity development environment.
 
-Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., playground.sol). Copy and paste the following code written by me into the file.
+### Executing program
 
-To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set heigher to "0.8.17" (or another compatible version), and then click on the "Compile playground.sol" button.
+1. Open [Remix](https://remix.ethereum.org/).
+2. Create a new file and paste the contract code into it.
+3. Compile the contract using the Solidity compiler (version 0.8.17 or above).
+4. Deploy the contract using the "Deploy & Run Transactions" tab.
+5. Interact with the contract functions:
 
-Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the "ErrorsAndFunctions" contract from the dropdown menu, and then click on the "Deploy" button.
+```solidity
+// Example commands in Remix
 
-Once the contract is deployed, you can interact with it by calling the setValue function to set the value, performDivison function to perform the division and value variable check to check the value of the variable that is publick so we can check that. Finally, click on the "transact" button to execute the function and retrieve the values and messages.
+// Call the requireEvenNumber function with an even number
+ErrorsAndFunctions.requireEvenNumber(2);
+
+// Call the assertEvenNumber function with an even number
+ErrorsAndFunctions.assertEvenNumber(4);
+
+// Call the revertEvenNumber function with an even number
+ErrorsAndFunctions.revertEvenNumber(6);
+```
+
+## Authors
+Yogita Rani 
+iamyogita1001@gmail.com
+
 ## Video Walkthrough
-
+link
 
 ## License
-
-This project is licensed under the MIT License - see the LICENSE file for details
+This project is licensed under the MIT License 
