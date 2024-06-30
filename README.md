@@ -39,7 +39,7 @@ Yogita Rani
 iamyogita1001@gmail.com
 
 ## Video Walkthrough
-link
+https://www.loom.com/share/70ee618f4bce4fa283f1b68d06121f7c?sid=2acd8839-111f-43d6-a8fd-13ce48129772
 
 ## License
 This project is licensed under the MIT License 
